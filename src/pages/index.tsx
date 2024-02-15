@@ -1,17 +1,12 @@
-import Head from "next/head";
 import { motion as m } from "framer-motion";
 import Navbar from "../Components/Navbar";
 import Link from "next/link";
 import { Link as ScrollLink } from "react-scroll";
-import { Link as RouterLink } from "react-router-dom";
-import { Parallax } from "react-scroll-parallax";
 import Image from "next/image";
 import hero from "../../public/hero.png";
 import { ArrowRight } from "lucide-react";
 
 export default function Home() {
-  const d = new Date();
-
   return (
     <>
       <m.div
@@ -38,7 +33,7 @@ export default function Home() {
                 className="h-[50%] w-full rounded-lg"
               >
                 <button className="playfair h-[50%] w-full rounded-lg bg-[#c3ae62] text-black">
-                  DISCOVER FLEUR D'HOMME
+                  DISCOVER FLEUR D&apos;HOMME
                 </button>
               </ScrollLink>
             </div>
@@ -80,13 +75,13 @@ export default function Home() {
           <div className="grid h-[35vh] w-screen grid-cols-12 grid-rows-6">
             <div className="col-span-full row-span-5  flex flex-col items-center justify-center">
               <p className="playfair [font-size:_clamp(4em,10vw,15em)]">
-                Fleur d'homme
+                Fleur d&apos;homme
               </p>
             </div>
             <div className="col-span-full row-start-6 flex h-full w-full flex-col items-center justify-center text-sm">
               <div className="grid h-full w-full grid-cols-6 p-2">
                 <div className="col-span-3 flex flex-col justify-between sm:col-span-2 md:flex-row">
-                  <p>© {new Date().getFullYear()} Fleur d'homme</p>
+                  <p>© {new Date().getFullYear()} Fleur d&apos;homme</p>
                   <p>Terms of Service</p>
                   <p>Privacy Policy</p>
                   <p>Docs</p>

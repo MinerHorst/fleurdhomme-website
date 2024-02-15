@@ -6,8 +6,8 @@ import React from "react";
 export default function Navbar() {
   const router = useRouter();
   return (
-    <nav className="sticky top-0 left-0 col-span-full row-span-1 grid grid-cols-6 grid-rows-1 font-medium z-20 text-white montserrat bg-black">
-      <ul className="col-span-1 montserrat font-light flex-row gap-12 flex justify-evenly items-center">
+    <nav className="montserrat sticky left-0 top-0 z-20 col-span-full row-span-1 grid grid-cols-6 grid-rows-1 bg-black font-medium text-white">
+      <ul className="montserrat col-span-1 flex flex-row items-center justify-evenly gap-12 font-light">
         <Link href="/">
           <li
             className={`cursor-pointer ${
@@ -27,9 +27,9 @@ export default function Navbar() {
           </li>
         </Link>
       </ul>
-      <div className="h-full col-start-2 col-span-4 flex flex-col justify-center items-center">
-        <p className="[font-size:_clamp(2em,4.5vw,8em)] copperplate">
-          Fleur d'homme
+      <div className="col-span-4 col-start-2 flex h-full flex-col items-center justify-center">
+        <p className="copperplate [font-size:_clamp(2em,4.5vw,8em)]">
+          Fleur d&apos;homme
         </p>
       </div>
       <div className="col-start-6 flex flex-row items-center justify-evenly">

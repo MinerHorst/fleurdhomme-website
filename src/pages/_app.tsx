@@ -1,5 +1,4 @@
 import "../styles/globals.css";
-import Navbar from "../Components/Navbar";
 import { AnimatePresence } from "framer-motion";
 import React from "react";
 import { ParallaxProvider } from "react-scroll-parallax";
